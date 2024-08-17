@@ -1,0 +1,85 @@
+#first{
+    border: 1px solid #e91717;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#second{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 15px;
+    width: 30%;
+    
+    
+}
+.cartsummary{
+    border: 1px solid #e91717;
+    padding: 1rem;
+}
+
+.content{
+    display: flex;
+    gap: 12px;
+    padding: 1rem;
+}
+
+.plat2{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    
+}
+
+.container3{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.boutonone{
+    border-radius: 25px;
+    height: 20px;
+    width: 18px;
+    color: red;
+    background-color: rgb(198, 194, 194);
+    
+}
+
+.boutontwo{
+    border-radius: 25px;
+    height: 20px;
+    width: 18px;
+    color: blue;
+    background-color: rgb(198, 194, 194);
+}
+
+.divfour{
+    align-items: center;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    
+}
+
+.savebutton1{
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #e91717;
+    color: white;
+    outline: none;
+    opacity: 0.8;
+    cursor: pointer;
+    /* margin-left: 20px; */
+    margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../pages/home.html" class="logo ">Restaurant App</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../pages/cart.html" class="active">Cart<span class="cartn" id="count">0</span></a>
+                    </li>
+                    <li>
+                        <a href="../pages/order.html">Orders</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content">
+
+        <div class="cartContainer" id="cartContainer">
+
+
+        </div>
+
+        <div class="container4" id="second">
+            <div class="cartsummary">
+                <p class="text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    Items account: <span id="account">0</span>
+                </p>
+                <p class="text0">
+                    Total price: <span id="totalPrice">0</span> FCFA
+                </p>
+                <button class="savebutton1" onclick="order()" id="savebutton" >
+                    Order
+                </button>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/admin-products.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+
+
+    <!-- nav barre -->
+
+    <header>
+        <div class="container">
+            <a href="" class="logo">Admin</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../pages/admin-products.html" class="active">Products </a>
+                    </li>
+                    <li>
+                        <a href="../pages/admin-orders.html">Orders</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--admin  -->
+    <div class="adminContainer">
+        <div class="containerLeft">
+            <table id="products">
+                
+                <tbody>
+                    <button id="displayFormBtn" class="savebutton" style="background-color: blue; margin-bottom: 10px;" onclick="displayForm()">
+                        Open
+                    </button>
+                </tbody>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stocks</th>
+                    <th>Cooktime</th>
+                    <th>Actions</th>
+                    
+                </tr>
+                <tbody id="tablebody">
+
+                </tbody>
+            
+            </table>
+        </div>
+
+        <!--  -->
+
+        <div class="containerRight" id="containerRight" style="display: none;">
+            <div class="formContainer">
+                <form>
+                    <div class="formgroup">
+                        <label for="text">Image</label>
+                        <input class="fontcontrol" type="text" id="image" name="image">
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="name">Name</label>
+                        <input class="fontcontrol" type="text" id="name" name="name">
+                    </div>
+            
+                    <div class="formgroup">
+                        <label for="Price">Price</label>
+                        <input class="fontcontrol" type="number" id="price" name="price">
+                    </div>
+                
+             
+                    <div class="formgroup">
+                        <label for="Stocks">Stocks</label>
+                        <input class="fontcontrol" type="number" id="stock" name="stock">
+                    </div>
+              
+                    <div class="formgroup">
+                        <label for="Cooktime">Cook Time</label>
+                        <input class="fontcontrol" type="number" id="cooktime" name="cooktime">
+                    </div>
+
+                </form>
+
+                <div style="display: flex; gap:10px">
+                    
+                    <button class="savebutton" onclick="saveProduct()" id="savebutton">
+                        Save
+                    </button>
+                    <button class="savebutton" onclick="editProduct()" id="editbutton" style="background-color: green; display: none">
+                        Edit
+                    </button>
+                    <button class="savebutton" onclick="resetForm()" style="background-color: blue" >
+                        reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/admin-products.js"></script>
+
+</body>

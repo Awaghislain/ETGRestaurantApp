@@ -1,0 +1,67 @@
+.adminContainer{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.containerLeft{
+    flex: 3;
+    
+}
+
+.containerRight{
+    flex: 2;
+    margin-right: 30px;
+}
+
+
+.imgplat1{
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+}
+
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    background-color: #e91717;
+}
+
+table{
+    width: 100%;
+    
+}
+
+#products tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th{
+    margin-left: 1rem;
+}
+
+.fontcontrol{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 0 18px 0;
+    padding: 0 10px ;
+}
+
+.savebutton{
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #41f793;
+    color: white;
+    outline: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
